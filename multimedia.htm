@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NASA</title>
+    <style>
+        .nav-link {
+            color: #fff;
+            text-decoration: none;
+            font-size: 16px;
+            position: relative;
+            transition: opacity 0.2s ease;
+        }
+
+        .nav-link:hover {
+            opacity: 0.75;
+        }
+
+
+        /* NASA+ LIVE üçün xüsusi stil */
+        .nav-link-live {
+            display: flex;
+            align-items: center;
+            gap: 4px;
+        }
+
+        .live-badge {
+            background: red;
+            color: #fff;
+            font-size: 10px;
+            font-weight: bold;
+            padding: 2px 6px;
+            border-radius: 2px;
+            transition: background 0.2s ease, transform 0.2s ease;
+        }
+
+        .nav-link-live:hover .live-badge {
+            background: #ff4444;
+            transform: scale(1.1);
+        }
+    </style>
+
+
+</head>
+<body style="margin:0; padding:0; background:#000; font-family:Arial,sans-serif; color:#fff;">
+    <header
+        style="background:#000; display:flex; align-items:center; justify-content:space-between; padding:15px 44px; height:56px; border-bottom:1px solid #333;">
+
+        <img src="img/nasa-logo.svg" style="height: 50px;" alt="">
+
+        <div style="display:flex; align-items:center; gap:20px;">
+            <a href="#" class="nav-link" onclick="page('index')">News &amp; Events</a>
+            <a href="#" class="nav-link" onclick="page('multimedia')">Multimedia</a>
+            <a href="#" class="nav-link nav-link-live" onclick="page('live')">
+                NASA+ <span class="live-badge">LIVE</span>
+            </a>
+        </div>
+    </header>
+<!-- MULTIMEDIA SECTION -->
+<section style="font-family:Arial,sans-serif; background:#fff;">
+
+  <!-- Alt naviqasiya -->
+  <nav style="background:#1a1a1a; padding:0 40px; display:flex; align-items:center; justify-content:center; gap:40px; height:48px;">
+    <a href="#" style="color:#fff; text-decoration:none; font-size:14px; font-weight:600;">Images</a>
+    <a href="#" style="color:#fff; text-decoration:none; font-size:14px; font-weight:600;">NASA+</a>
+    <a href="#" style="color:#fff; text-decoration:none; font-size:14px; font-weight:600;">Podcasts</a>
+    <a href="#" style="color:#fff; text-decoration:none; font-size:14px; font-weight:600;">e-Books</a>
+    <a href="#" style="color:#fff; text-decoration:none; font-size:14px; font-weight:600;">Games and Interactives</a>
+    <a href="#" style="color:#fff; text-decoration:none; font-size:14px; font-weight:600;">Mobile &amp; Desktop Apps</a>
+  </nav>
+
+  <!-- İçərik hissəsi -->
+  <div style="display:flex; align-items:center; padding:60px 110px; gap:60px;">
+
+    <!-- Sol: Böyük başlıq -->
+    <div style="flex:1;">
+      <h1 style="font-size:100px; font-weight:700; color:#000; margin:0; line-height:1; letter-spacing:-3px;">Multimedia</h1>
+    </div>
+
+    <!-- Sağ: Xəbər kartı -->
+    <div style="flex:1; border-top:1px solid #ccc; padding-top:20px; display:flex; align-items:flex-start; gap:20px;">
+      <div style="flex:1;">
+        <div style="font-size:10px; letter-spacing:3px; color:#777; text-transform:uppercase; margin-bottom:14px;">Multimedia News</div>
+        <p style="font-size:15px; color:#111; line-height:1.6; margin:0 0 20px;">
+          NASA has been recognized by the 76th Technology and Engineering Emmy Awards with the Emmy Award for Excellence in Production Technology for coverage of the 2024 total solar eclipse.
+        </p>
+      </div>
+      <img src="img/mlmtdykisi.jpg" alt="Multimedia news" style="width:80px; height:80px; border-radius:50%; object-fit:cover; flex-shrink:0;"/>
+    </div>
+
+  </div>
+  <img src="img/mlmtdykisi1.webp" style="padding: 20px 110px; width: 1300px; height: 95vh;" alt="">
+</section>
+<!-- /MULTIMEDIA SECTION -->
+<!-- NASA+ SECTION -->
+<section style="background:#f2f2f0; padding:60px 90px; font-family:Arial,sans-serif; display:flex; align-items:flex-start; gap:60px;">
+
+  <!-- Sol mətn -->
+  <div style="flex:1; padding-top:20px;">
+    <div style="font-size:14px; font-weight:700; color:#000; margin-bottom:20px;">Watch</div>
+    <h2 style="font-size:56px; font-weight:600; color:#000; margin:0 0 32px; letter-spacing:-1px;">NASA+</h2>
+    <p style="font-size:15px; color:#333; line-height:1.6; margin:0 0 28px; max-width:500px;">
+      NASA+, a new ad-free, no-cost, family-friendly streaming service that embeds you into our missions through new original video series.
+    </p>
+    <a href="#" style="color:#000; text-decoration:none; font-size:16px; font-weight:700; display:flex; align-items:center; gap:10px; width:fit-content;">
+      Start Streaming
+      
+    </a>
+  </div>
+
+  <!-- Sağ şəkil -->
+  <div style="flex:1;">
+    <img src="img/moonbound-key-art-ep-2-op-b-r1-key-art-4-3-without-title.webp" alt="NASA+ streaming" style="width:100%; border-radius:4px; display:block; margin-bottom:12px;"/>
+    <p style="font-size:13px; color:#444; line-height:1.6; margin:0 0 4px;">
+      The Artemis II mission patch seen on the right shoulder of the Orion Crew Survival System suits.
+    </p>
+    <p style="font-size:13px; font-weight:700; color:#000; margin:0;">NASA/Joel Kowsky</p>
+  </div>
+
+</section>
+<section style="background:#f2f2f0; padding:60px 90px; font-family:Arial,sans-serif; display:flex; align-items:flex-start; gap:60px;">
+
+  <!-- Sol mətn -->
+  <div style="flex:1; padding-top:20px;">
+    <div style="font-size:14px; font-weight:700; color:#000; margin-bottom:20px;">Watch</div>
+    <h2 style="font-size:56px; font-weight:600; color:#000; margin:0 0 32px; letter-spacing:-1px;">Space Station Views with Mission Audio</h2>
+    <p style="font-size:15px; color:#333; line-height:1.6; margin:0 0 28px; max-width:500px;">
+      Stream live views from the International Space Station accompanied by mission audio when available.
+    </p>
+    <a href="#" style="color:#000; text-decoration:none; font-size:16px; font-weight:700; display:flex; align-items:center; gap:10px; width:fit-content;">
+      Start Streaming
+      
+    </a>
+  </div>
+
+  <!-- Sağ şəkil -->
+  <div style="flex:1;">
+    <img src="img/watch.webp" alt="NASA+ streaming" style="width:100%; border-radius:4px; display:block; margin-bottom:12px;"/>
+    <p style="font-size:13px; color:#444; line-height:1.6; margin:0 0 4px;">
+      This long exposure photograph taken by NASA astronaut Matthew Dominick with a camera programmed for high sensitivity shows star trails and streaks of city lights as the International Space Station orbited 258 miles above the South China Sea off the coast of Vietnam near Ho Chi Minh City.
+    </p>
+    <p style="font-size:13px; font-weight:700; color:#000; margin:0;">NASA</p>
+  </div>
+
+</section>
+<section style="background:#f2f2f0; padding:60px 90px; font-family:Arial,sans-serif; display:flex; align-items:flex-start; gap:60px;">
+
+  <!-- Sol mətn -->
+  <div style="flex:1; padding-top:20px;">
+    <div style="font-size:14px; font-weight:700; color:#000; margin-bottom:20px;">View</div>
+    <h2 style="font-size:56px; font-weight:600; color:#000; margin:0 0 32px; letter-spacing:-1px;">Image Galleries</h2>
+    <p style="font-size:15px; color:#333; line-height:1.6; margin:0 0 28px; max-width:500px;">
+      NASA has always told its story through its images, a few of which have become icons of human history. Discover images from missions exploring the universe and our home planet.
+    </p>
+    <a href="#" style="color:#000; text-decoration:none; font-size:16px; font-weight:700; display:flex; align-items:center; gap:10px; width:fit-content;">
+      View Images
+    </a>
+  </div>
+  <!-- Sağ şəkil -->
+  <div style="flex:1;">
+    <img src="img/watch1.webp" alt="NASA+ streaming" style="width:100%;height: 400px; border-radius:4px; display:block; margin-bottom:12px;"/>
+    <p style="font-size:13px; color:#444; line-height:1.6; margin:0 0 4px;">
+      Backdropped against the blue and white Earth 130 nautical miles below, astronaut Mark C. Lee tests the new Simplified Aid for EVA Rescue system on Sept. 16, 1994.
+    </p>
+    <p style="font-size:13px; font-weight:700; color:#000; margin:0;">NASA</p>
+  </div>
+
+</section>
+<section style="background:#f2f2f0; padding:60px 90px; font-family:Arial,sans-serif; display:flex; align-items:flex-start; gap:60px;">
+
+  <!-- Sol mətn -->
+  <div style="flex:1; padding-top:20px;">
+    <div style="font-size:14px; font-weight:700; color:#000; margin-bottom:20px;">Listen</div>
+    <h2 style="font-size:56px; font-weight:600; color:#000; margin:0 0 32px; letter-spacing:-1px;">Podcasts</h2>
+    <p style="font-size:15px; color:#333; line-height:1.6; margin:0 0 28px; max-width:500px;">
+     From longform interviews with astronauts and engineers to narrative shows that take you on a tour of the galaxy, NASA’s diverse podcast portfolio lets you experience the thrill of space exploration without ever leaving Earth.
+
+
+    </p>
+    <a href="#" style="color:#000; text-decoration:none; font-size:16px; font-weight:700; display:flex; align-items:center; gap:10px; width:fit-content;">
+     Start Listening
+      
+    </a>
+  </div>
+
+  <!-- Sağ şəkil -->
+  <div style="flex:1;">
+    <img src="img/watch2.png" alt="NASA+ streaming" style="width:100%; border-radius:4px; display:block; margin-bottom:12px;"/>
+    <p style="font-size:13px; color:#444; line-height:1.6; margin:0 0 4px;">
+      The Artemis II mission patch seen on the right shoulder of the Orion Crew Survival System suits.
+    </p>
+    <p style="font-size:13px; font-weight:700; color:#000; margin:0;">NASA/Joel Kowsky</p>
+  </div>
+
+</section>
+<!-- /NASA+ SECTION -->
+<!-- MORE ONLINE FEATURES SECTION -->
+<section style="background:#fff; padding:70px 80px; font-family:Arial,sans-serif;">
+
+  <h2 style="font-size:36px; font-weight:800; color:#000; margin:0 0 36px;">More Online Features</h2>
+  <div style="display:grid; grid-template-columns:repeat(4,1fr); gap:24px;">
+    <!-- Kart 1 -->
+    <div>
+      <img src="img/online1.webp" alt="Games & Interactives" style="width:100%; height:230px; object-fit:cover; border-radius:4px; display:block; margin-bottom:16px;"/>
+      <h3 style="font-size:16px; font-weight:700; color:#000; margin:0 0 8px;">Games &amp; Interactives</h3>
+      <p style="font-size:14px; color:#444; line-height:1.6; margin:0 0 16px;">Visit our library of educational games and data visualizations.</p>
+      <a href="#" style="color:#000; text-decoration:none; font-size:15px; font-weight:700; display:flex; align-items:center; gap:8px; width:fit-content;">
+        Explore
+        
+      </a>
+    </div>
+
+    <!-- Kart 2 -->
+    <div>
+      <img src="img/online2.jpg" alt="e-Books" style="width:100%; height:230px; object-fit:cover; border-radius:4px; display:block; margin-bottom:16px;"/>
+      <h3 style="font-size:16px; font-weight:700; color:#000; margin:0 0 8px;">e-Books</h3>
+      <p style="font-size:14px; color:#444; line-height:1.6; margin:0 0 16px;">Read and download free NASA e-Books on the agency's history and science.</p>
+      <a href="#" style="color:#000; text-decoration:none; font-size:15px; font-weight:700; display:flex; align-items:center; gap:8px; width:fit-content;">
+        Browse
+        
+      </a>
+    </div>
+
+    <!-- Kart 3 -->
+    <div>
+      <img src="img/online3.webp" alt="Data Sonifications" style="width:100%; height:230px; object-fit:cover; border-radius:4px; display:block; margin-bottom:16px;"/>
+      <h3 style="font-size:16px; font-weight:700; color:#000; margin:0 0 8px;">Data Sonifications</h3>
+      <p style="font-size:14px; color:#444; line-height:1.6; margin:0 0 16px;">Observational data from NASA telescopes translated into sound.</p>
+      <a href="#" style="color:#000; text-decoration:none; font-size:15px; font-weight:700; display:flex; align-items:center; gap:8px; width:fit-content;">
+        Listen
+        
+      </a>
+    </div>
+
+    <!-- Kart 4 -->
+    <div>
+      <img src="img/online4.webp" alt="Live Video" style="width:100%; height:230px; object-fit:cover; border-radius:4px; display:block; margin-bottom:16px;"/>
+      <h3 style="font-size:16px; font-weight:700; color:#000; margin:0 0 8px;">Live Video</h3>
+      <p style="font-size:14px; color:#444; line-height:1.6; margin:0 0 16px;">Live programming is available on a variety of third-party streaming services.</p>
+      <a href="#" style="color:#000; text-decoration:none; font-size:15px; font-weight:700; display:flex; align-items:center; gap:8px; width:fit-content;">
+        Watch
+        
+      </a>
+    </div>
+
+  </div>
+</section>
+<!-- /MORE ONLINE FEATURES SECTION -->
+<!-- NASA BRAND CENTER SECTION -->
+<section style="position:relative; width:100%; min-height:100vh; overflow:hidden; font-family:Arial,sans-serif;">
+
+  <img src="img/nasabg.webp" alt="NASA Brand Center background" style="position:absolute; top:0; left:0; width:100%; height:100%; object-fit:cover;"/>
+  <!-- Sol qaranlıq overlay -->
+  <div style="position:absolute; top:0; left:0; width:55%; height:100%; background:linear-gradient(to right, rgba(0,0,0,0.85) 60%, rgba(0,0,0,0));"></div>
+  <div style="position:relative; z-index:1; padding:120px 90px 60px 90px; max-width:620px; min-height:480px; display:flex; flex-direction:column; justify-content:flex-end;">
+    <h2 style="font-size:44px; font-weight:800; color:#fff; margin:0 0 20px; line-height:1.1;">
+      NASA Brand Center
+    </h2>
+    <p style="font-size:15px; color:#ddd; line-height:1.7; margin:0 0 28px; max-width:540px;">
+      NASA has established specific guidelines for the use of its brand, merchandise, and media. These guidelines are designed to ensure that the NASA brand is used consistently and appropriately across all platforms and partnerships.
+    </p>
+    <a href="#" style="color:#fff; text-decoration:none; font-size:16px; font-weight:700; display:flex; align-items:center; gap:10px; width:fit-content;">
+      View Guidelines
+    </a>
+  </div>
+</section>
+<!-- /NASA BRAND CENTER SECTION -->
+<!-- DISCOVER MORE SECTION -->
+<section style="background:#fff; padding:60px 40px; font-family:Arial,sans-serif;">
+  <h2 style="font-size:36px; font-weight:800; color:#000; margin:0 0 32px;">Discover More</h2>
+  <div style="display:grid; grid-template-columns:repeat(4,1fr); gap:8px;">
+    <!-- Kart 1 -->
+    <div style="position:relative; border-radius:4px; overflow:hidden; cursor:pointer; min-height:600px; background:#111;">
+      <img src="img/discover1.webp" alt="Games and Interactives" style="width:100%; height:100%; object-fit:cover; filter:brightness(0.55); position:absolute; top:0; left:0;"/>
+      <div style="position:absolute; bottom:0; left:0; right:0; padding:20px; display:flex; align-items:flex-end; justify-content:space-between;">
+        <h3 style="font-size:20px; font-weight:800; color:#fff; margin:0; line-height:1.2;">Games and Interactives</h3>
+      </div>
+    </div>
+    <!-- Kart 2 -->
+    <div style="position:relative; border-radius:4px; overflow:hidden; cursor:pointer; min-height:600px; background:#111;">
+      <img src="img/discover2.webp" alt="Blogs" style="width:100%; height:100%; object-fit:cover; filter:brightness(0.55); position:absolute; top:0; left:0;"/>
+      <div style="position:absolute; bottom:0; left:0; right:0; padding:20px; display:flex; align-items:flex-end; justify-content:space-between;">
+        <h3 style="font-size:20px; font-weight:800; color:#fff; margin:0; line-height:1.2;">Blogs</h3>
+      </div>
+    </div>
+    <!-- Kart 3 -->
+    <div style="position:relative; border-radius:4px; overflow:hidden; cursor:pointer; min-height:600px; background:#111;">
+      <img src="img/discover3.webp" alt="Newsletters" style="width:100%; height:100%; object-fit:cover; filter:brightness(0.55); position:absolute; top:0; left:0;"/>
+      <div style="position:absolute; bottom:0; left:0; right:0; padding:20px; display:flex; align-items:flex-end; justify-content:space-between;">
+        <h3 style="font-size:20px; font-weight:800; color:#fff; margin:0; line-height:1.2;">Newsletters</h3>
+      </div>
+    </div>
+    <!-- Kart 4 -->
+    <div style="position:relative; border-radius:4px; overflow:hidden; cursor:pointer; min-height:600px; background:#111;">
+      <img src="img/discover4.webp" alt="Mobile and Desktop Apps" style="width:100%; height:100%; object-fit:cover; filter:brightness(0.55); position:absolute; top:0; left:0;"/>
+      <div style="position:absolute; bottom:0; left:0; right:0; padding:20px; display:flex; align-items:flex-end; justify-content:space-between;">
+        <h3 style="font-size:20px; font-weight:800; color:#fff; margin:0; line-height:1.2;">Mobile and Desktop Apps</h3>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- /DISCOVER MORE SECTION -->
+<footer style="background:#000; color:#fff; font-family:Arial,sans-serif; padding:50px 60px 0;">
+        <div style="display:grid; grid-template-columns:320px 1fr 1fr 1fr auto; gap:40px; padding-bottom:50px;">
+            <!-- Sol: Logo + mətn -->
+            <div>
+                <img src="img/nasa-logo.svg" alt="NASA"
+                    style="width:60px; height:60px; margin-bottom:24px; display:block;" />
+                <h3 style="font-size:17px; font-weight:700; color:#fff; margin:0 0 16px; line-height:1.3;">National
+                    Aeronautics and Space Administration</h3>
+                <p style="font-size:14px; color:#ccc; line-height:1.6; margin:0 0 20px;">NASA explores the unknown in
+                    air and space, innovates for the benefit of humanity, and inspires the world through discovery.</p>
+                <a href="#"
+                    style="color:#ccc; text-decoration:none; font-size:14px; display:block; margin-bottom:16px;">About
+                    NASA's Mission</a>
+                <a href="#"
+                    style="color:#fff; text-decoration:none; font-size:15px; font-weight:700; display:flex; align-items:center; gap:8px; width:fit-content;">
+                    Join Us
+                </a>
+            </div>
+            <!-- Sütun 1 -->
+            <div>
+                <ul style="list-style:none; margin:0; padding:0; display:flex; flex-direction:column; gap:16px;">
+                    <li><a href="#" style="color:#fff; text-decoration:none; font-size:14px;">Home</a></li>
+                    <li><a href="#" style="color:#fff; text-decoration:none; font-size:14px;">News &amp; Events</a></li>
+                    <li><a href="#" style="color:#fff; text-decoration:none; font-size:14px;">Multimedia</a></li>
+                    <li>
+                        <a href="#"
+                            style="color:#fff; text-decoration:none; font-size:14px; display:flex; align-items:center; gap:6px;">
+                            NASA+ <span
+                                style="border:1px solid #fff; font-size:10px; padding:1px 4px; border-radius:2px; font-weight:700;">LIVE</span>
+                        </a>
+                    </li>
+                    <li><a href="#" style="color:#fff; text-decoration:none; font-size:14px;">Missions</a></li>
+                </ul>
+            </div>
+            <!-- Sütun 2 -->
+            <div>
+                <ul style="list-style:none; margin:0; padding:0; display:flex; flex-direction:column; gap:16px;">
+                    <li><a href="#" style="color:#fff; text-decoration:none; font-size:14px;">Humans in Space</a></li>
+                    <li><a href="#" style="color:#fff; text-decoration:none; font-size:14px;">Earth</a></li>
+                    <li><a href="#" style="color:#fff; text-decoration:none; font-size:14px;">The Solar System</a></li>
+                    <li><a href="#" style="color:#fff; text-decoration:none; font-size:14px;">The Universe</a></li>
+                    <li><a href="#" style="color:#fff; text-decoration:none; font-size:14px;">Science</a></li>
+                </ul>
+            </div>
+            <!-- Sütun 3 -->
+            <div>
+                <ul style="list-style:none; margin:0; padding:0; display:flex; flex-direction:column; gap:16px;">
+                    <li><a href="#" style="color:#fff; text-decoration:none; font-size:14px;">Aeronautics</a></li>
+                    <li><a href="#" style="color:#fff; text-decoration:none; font-size:14px;">Technology</a></li>
+                    <li><a href="#" style="color:#fff; text-decoration:none; font-size:14px;">Learning Resources</a>
+                    </li>
+                    <li><a href="#" style="color:#fff; text-decoration:none; font-size:14px;">About NASA</a></li>
+                    <li><a href="#" style="color:#fff; text-decoration:none; font-size:14px;">NASA en Español</a></li>
+                </ul>
+            </div>
+            <!-- Sosial media -->
+            <div style="min-width:200px;">
+                <p style="font-size:14px; color:#ccc; margin:0 0 16px;">Follow NASA</p>
+                <div style="display:flex; gap:8px; margin-bottom:20px;">
+                    <a href="#"
+                        style="width:36px; height:36px; border-radius:50%; background:#222; display:inline-flex; align-items:center; justify-content:center; color:#fff; text-decoration:none; font-size:15px;">f</a>
+                    <a href="#"
+                        style="width:36px; height:36px; border-radius:50%; background:#222; display:inline-flex; align-items:center; justify-content:center; color:#fff; text-decoration:none; font-size:15px;">&#x1F4F7;</a>
+                    <a href="#"
+                        style="width:36px; height:36px; border-radius:50%; background:#222; display:inline-flex; align-items:center; justify-content:center; color:#fff; text-decoration:none; font-size:14px; font-weight:700;">𝕏</a>
+                    <a href="#"
+                        style="width:36px; height:36px; border-radius:50%; background:#222; display:inline-flex; align-items:center; justify-content:center; color:#fff; text-decoration:none; font-size:15px;">▶</a>
+                </div>
+                <a href="#"
+                    style="color:#fff; text-decoration:none; font-size:14px; display:block; margin-bottom:12px;">More
+                    NASA Social Accounts</a>
+                <a href="#" style="color:#fff; text-decoration:none; font-size:14px; display:block;">NASA
+                    Newsletters</a>
+            </div>
+        </div>
+        <!-- Ayırıcı xətt -->
+        <div style="border-top:1px solid #333; padding:24px 0 16px;">
+            <div style="display:flex; flex-wrap:wrap; gap:12px 24px; margin-bottom:20px;">
+                <a href="#" style="color:#ccc; text-decoration:none; font-size:13px;">Sitemap</a>
+                <a href="#" style="color:#ccc; text-decoration:none; font-size:13px;">For Media</a>
+                <a href="#" style="color:#ccc; text-decoration:none; font-size:13px;">Privacy Policy</a>
+                <a href="#" style="color:#ccc; text-decoration:none; font-size:13px;">FOIA</a>
+                <a href="#" style="color:#ccc; text-decoration:none; font-size:13px;">No FEAR Act</a>
+                <a href="#" style="color:#ccc; text-decoration:none; font-size:13px;">Office of the IG</a>
+                <a href="#" style="color:#ccc; text-decoration:none; font-size:13px;">Budget &amp; Annual Reports</a>
+                <a href="#" style="color:#ccc; text-decoration:none; font-size:13px;">Agency Financial Reports</a>
+                <a href="#" style="color:#ccc; text-decoration:none; font-size:13px;">Contact NASA</a>
+                <a href="#" style="color:#ccc; text-decoration:none; font-size:13px;">Accessibility</a>
+            </div>
+            <p style="font-size:13px; color:#888; margin:0;">
+                Page Last Updated: <strong style="color:#fff;">May 22, 2026</strong> &nbsp;&nbsp;
+                Page Editor: <strong style="color:#fff;">Dacia Massengill</strong> &nbsp;&nbsp;
+                Responsible NASA Official: <strong style="color:#fff;">Abigail Bowman</strong>
+            </p>
+        </div>
+    </footer>
+    <script src="main.js"></script>
+</body>
+</html>
